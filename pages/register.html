@@ -6,8 +6,6 @@
     <title>Register</title>
 </head>
 <body>
-    
-    
     <header>
         <nav>
             <ul>
@@ -20,5 +18,41 @@
         </nav>
     </header>
 
+    <main>
+        <h1>Register</h1>
+        <form action="register.php" method="POST">
+            <label for="name">Name</label><br>
+            <input type="text" name="name" id="name" placeholder="Kevin Malone" required>
+            <br>
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="password" placeholder="Must contain 8+ characters" required>
+            <br>
+            <label for="confirm-password">Password</label><br>
+            <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" required>
+            <br>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="kevin@dundermifflin.com" required>
+            <br>
+            <label for="gender">Select your gender</label>
+            <br>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <br>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <br>
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <br>
+            <label for="photo">Add photo</label><br>
+            <input type="file" name="photo" id="photo" required><br>
+            <br>
+            <input type="submit" name="submit" id="submit" value="Submit">
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2023 by Eduard Precup</p>
+    </footer>
 </body>
 </html>
